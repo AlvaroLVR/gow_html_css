@@ -16,6 +16,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 /* 2. Aplicarla a todo el documento */
 html, body {
   font-family: 'GodOfWar1', sans-serif;
@@ -35,10 +36,10 @@ ul,ol{
     list-style: none;
 }
 
-h1,h2,h3{
+h1,h2,h3,p, li, u{
     font-family: 'Cinzel Decorative', serif;
     font-weight: 900;
-    color: #b52b16;
+    color: #9B111E;
     text-shadow:
         2px 2px 0 #000,
         4px 4px 5px #000;
@@ -47,15 +48,13 @@ h1,h2,h3{
 }
 
 p, li, ul {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #e0d6cc;
-    line-height: 1.7;
-    font-size: 16px;
+    color: rgba(224, 214, 204, 0.8);
+    font-weight: 300;
 }
 
 a{
     align-self: center;
+    color: rgba(255, 255, 255, 0.502);
 }
 
 p, a, li {
@@ -64,13 +63,14 @@ p, a, li {
 }
 
 p:hover, a:hover, li:hover {
-    color: #ff5a24;
+    color: #C81D25;
     text-shadow:
         0 0 5px #ff4500,
         0 0 10px #ff2200,
         0 0 20px #b52b16;
     transform: scale(1.04);
 }
+
 h1, h2, h3 {
     transition: all 0.35s ease;
 }
@@ -96,8 +96,7 @@ p {
     cursor: pointer;
 }
 
-ul li:hover::before,
-p:hover::before {
+ul li:hover::before{
     content: "▶ ";
     color: #ff5722;
     text-shadow: 0 0 10px #ff2200;
@@ -107,4 +106,9 @@ ul li:hover,
 p:hover {
     color: #ff5722;
     text-shadow: 0 0 10px #ff2200;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
 }
