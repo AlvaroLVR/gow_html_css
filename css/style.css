@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cinzel+Decorative:wght@700;900&family=Roboto:wght@300;400;500;700&display=swap');
 
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* 1. Registrar la fuente */
 @font-face {
   font-family: 'GodOfWar1';
-  src: url('/font/godofwar.woff2') format('woff2'),
-       url('/font/GODOFWAR.TTF') format('truetype');
+  src: url('../font/GODOFWAR.woff2') format('woff2'),
+       url('../font/GODOFWAR.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
