@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cinzel+Decorative:wght@700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 1. Registrar la fuente */
+@font-face {
+  font-family: 'GodOfWar1';
+  src: url('/font/godofwar.woff2') format('woff2'),
+       url('/font/GODOFWAR.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Aplicarla a tus títulos o logotipo */
+.titulo-gow {
+  font-family: 'GodOfWar1', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* 2. Aplicarla a todo el documento */
+html, body {
+  font-family: 'GodOfWar1', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url("../images/GOW.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: bisque;
+    padding: 0 2rem;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+h1,h2,h3{
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 900;
+    color: #b52b16;
+    text-shadow:
+        2px 2px 0 #000,
+        4px 4px 5px #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+p, li, ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #e0d6cc;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+a{
+    align-self: center;
+}
+
+p, a, li {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+p:hover, a:hover, li:hover {
+    color: #ff5a24;
+    text-shadow:
+        0 0 5px #ff4500,
+        0 0 10px #ff2200,
+        0 0 20px #b52b16;
+    transform: scale(1.04);
+}
+h1, h2, h3 {
+    transition: all 0.35s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: #ff6a32;
+    text-shadow:
+        0 0 5px #ff4500,
+        0 0 15px #ff2200,
+        0 0 30px #ff0000;
+    letter-spacing: 3px;
+}
+
+a:hover::before {
+    content: "▶ ";
+    color: #ff5722;
+    text-shadow: 0 0 10px #ff2200;
+}
+
+ul li,
+p {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+ul li:hover::before,
+p:hover::before {
+    content: "▶ ";
+    color: #ff5722;
+    text-shadow: 0 0 10px #ff2200;
+}
+
+ul li:hover,
+p:hover {
+    color: #ff5722;
+    text-shadow: 0 0 10px #ff2200;
+}
