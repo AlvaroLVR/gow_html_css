@@ -50,6 +50,8 @@ h1,h2,h3,p, li, u{
 p, li, ul {
     color: rgba(224, 214, 204, 0.8);
     font-weight: 300;
+    line-height: 1rem;
+    margin-bottom: 13px;
 }
 
 a{
